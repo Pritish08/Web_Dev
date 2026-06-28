@@ -1,9 +1,9 @@
-// // // // // // // console.log("Hello from new.html");
-// // // // // //         // variables
-// // // // // //         1
+ // // console.log("Hello from new.html");
+/// / variables
+// //         1
 // // // // // //         // var name = "John Doe";
 // // // // // //         // var is either function scoped or globally scoped depending on where it is declared.
-// // // // // //         // function print(){
+// / // // // // // // // //         // function print(){
 // // // // // //         //     var name = "John Doe";
 // // // // // //         //     console.log(name);
 // // // // // //         // }
@@ -23,7 +23,7 @@
 // // // // // console.log(a / b); // Division
 // // // // // console.log(a % b);
 
-// // // // // Ternary Operator
+// // // // Ternary Operator
 // // // // let Age = 20;
 // // // // let Ans = (Age>10)?"CAN VOte":"Cannot Vote";
 // // // // console.log(Ans);
@@ -44,6 +44,25 @@
 // let a = "op1";
 // let b = "op2";
 // let ans = `${a} ${b}`;
+// // console.log(ans);
+// let name = "English";
+// console.log(name.substring(0,3));
+
+// Functions
+// function avg(a,b){
+//     let ans = (a+b)/2;
+//     console.log(ans);
+// }
+// avg(10,20);
+
+// let sum = function(a,b){
+//     return a+b;
+// }
+// let ans = sum(10,20);
 // console.log(ans);
-let name = "English";
-console.log(name.substring(0,3));
+
+// let avg = (a,b) => {
+//     let ans = (a+b)/2;
+//     console.log(ans);
+// }
+// avg(10,20);
