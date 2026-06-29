@@ -116,15 +116,35 @@
 //     console.log(index);
 // })
 
-let arr = [1,2,'love','kunal', null];
+// let arr = [1,2,'love','kunal', null];
 
-let ans = arr.filter((value) => {
-    if(typeof(value) == 'number') {
-        return true;
-    }
-    else {
-        return false;
-    }
-});
+// let ans = arr.filter((value) => {
+//     if(typeof(value) == 'number') {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// });
 
-console.log(ans);
+// console.log(ans);
+
+// Hoisting
+// In hoisting, variable and function declarations are moved to the top of their containing scope during the compilation phase. This means that you can use variables and functions before they are declared in the code. However, only the declarations are hoisted, not the initializations.
+// console.log(name);
+// var name = "John Doe";
+
+// let arr = [ 1, 2 , 3 , () => {
+//     console.log("Hello from function inside array");
+// }];
+// let and = arr[3];
+// and();
+
+// Functions are first-class citizens in JavaScript, which means they can be treated like any other value. You can assign functions to variables, pass them as arguments to other functions, and return them from functions. This allows for powerful programming patterns like callbacks and higher-order functions.
+let obj = {
+    name : "John Doe",
+    greet : function() {
+        console.log(`Hello`);
+    }
+}
+obj.greet();
