@@ -66,3 +66,65 @@
 //     console.log(ans);
 // }
 // avg(10,20);
+
+// Object
+
+// let person = {
+//     name : "Peter",
+//     age : 19 ,
+//     city : "New York",
+//     Morning : ()=>{
+//         console.log("Good Morning");
+//     }
+// }
+
+// for(let key in person){
+//     console.log(key , person[key]);
+// }
+
+// person.Morning();
+// console.log(typeof(person));
+
+// Array 
+// let arr = [1,2,3,4,5];
+
+// Method 2 
+// let brr = new Array('love',100,true,20,40,10);
+// brr.push('Babbar');
+// brr.pop();
+// brr.shift();
+// brr.unshift('Hello');
+// console.log(brr.slice(2,4));
+// brr.splice(2,1,'Hello',);
+// console.log(brr);
+
+// let arr = [10,20,30,11,21,44,51];
+
+// let evenArray = arr.filter((number) => {
+//     // return number%2 === 0;
+//     if(number%2 === 0) {
+//         return true;
+//     }
+//     else {
+//         return false;
+//     }
+// });
+// console.log(evenArray);
+
+// arr.map((number,index) => {
+//     console.log(number);
+//     console.log(index);
+// })
+
+let arr = [1,2,'love','kunal', null];
+
+let ans = arr.filter((value) => {
+    if(typeof(value) == 'number') {
+        return true;
+    }
+    else {
+        return false;
+    }
+});
+
+console.log(ans);
