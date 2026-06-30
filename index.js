@@ -150,7 +150,40 @@
 // obj.greet();
 
 // Temporal Dead Zone
-console.log(marks); // ReferenceError: Cannot access 'marks' before initialization
-let marks = 10 ;
-console.log(marks); // 10
+// console.log(marks); // ReferenceError: Cannot access 'marks' before initialization
+// let marks = 10 ;
+// console.log(marks); // 10
 // here the zone above declaring the variable is called temporal dead zone. In this zone, the variable is in a "dead" state and cannot be accessed until it is declared and initialized. This is a feature of JavaScript's block scoping and helps prevent certain types of bugs related to variable hoisting.
+
+// class
+// class Animal{
+//     name = "Dolphin";
+//     #age = '10';
+
+//     constructor(name1){
+//         this.name = name1 ;
+//     }
+
+
+//     Food(){
+//         console.log("Fish");
+//     }
+//     Age(){
+//         console.log(this.#age);
+//     }
+//     get GetAge(){
+//         return this.#age;
+//     }
+//     set SetAge(Age){
+//         this.#age = Age;
+//     }
+// }
+
+// let Koko = new Animal("Chetah");
+// console.log(Koko.name);
+// // console.log(Koko.#age);
+// // Koko.Age();
+// console.log(Koko.GetAge);
+// Koko.SetAge = '15';
+// console.log(Koko.GetAge);
+
