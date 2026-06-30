@@ -141,10 +141,16 @@
 // and();
 
 // Functions are first-class citizens in JavaScript, which means they can be treated like any other value. You can assign functions to variables, pass them as arguments to other functions, and return them from functions. This allows for powerful programming patterns like callbacks and higher-order functions.
-let obj = {
-    name : "John Doe",
-    greet : function() {
-        console.log(`Hello`);
-    }
-}
-obj.greet();
+// let obj = {
+//     name : "John Doe",
+//     greet : function() {
+//         console.log(`Hello`);
+//     }
+// }
+// obj.greet();
+
+// Temporal Dead Zone
+console.log(marks); // ReferenceError: Cannot access 'marks' before initialization
+let marks = 10 ;
+console.log(marks); // 10
+// here the zone above declaring the variable is called temporal dead zone. In this zone, the variable is in a "dead" state and cannot be accessed until it is declared and initialized. This is a feature of JavaScript's block scoping and helps prevent certain types of bugs related to variable hoisting.
