@@ -203,3 +203,24 @@
 // let det = new Date(2007, 0, 22, 11);
 // det.setFullYear(2007)
 // console.log(det)
+
+// Object Cloning
+let obj1 ={
+    name : "john",
+    age : '15',
+    gender : 'male'
+}
+// let obj2 = obj1;
+// cloning
+// 1 
+// let obj2 = {...obj1}
+// 2
+// let obj2 = Object.assign({},obj1)
+// 3 Loop
+let obj2 = {};
+for(let key in obj1){
+    obj2[key] = obj1[key];
+}
+// obj1.occ = "school";
+console.log("obj1",obj1)
+console.log("obj2",obj2)
