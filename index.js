@@ -187,3 +187,19 @@
 // Koko.SetAge = '15';
 // console.log(Koko.GetAge);
 
+// Built in Objects
+// Math
+// console.log(Math.min(1,2,44,5,63,3,2533))
+// console.log(Math.max(43,5,63,6,87,445))
+// console.log(Math.sqrt(4))
+// console.log(Math.floor(1.4))
+// console.log(Math.ceil(1.1))
+// console.log(Math.pow(10,2))
+
+// Date
+// let date = new Date();
+// console.log(date);
+// let cur = new Date("January 22 2008 11 ")
+// let det = new Date(2007, 0, 22, 11);
+// det.setFullYear(2007)
+// console.log(det)
