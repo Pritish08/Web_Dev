@@ -205,11 +205,11 @@
 // console.log(det)
 
 // Object Cloning
-let obj1 ={
-    name : "john",
-    age : '15',
-    gender : 'male'
-}
+// let obj1 ={
+//     name : "john",
+//     age : '15',
+//     gender : 'male'
+// }
 // let obj2 = obj1;
 // cloning
 // 1 
@@ -217,10 +217,23 @@ let obj1 ={
 // 2
 // let obj2 = Object.assign({},obj1)
 // 3 Loop
-let obj2 = {};
-for(let key in obj1){
-    obj2[key] = obj1[key];
-}
-// obj1.occ = "school";
-console.log("obj1",obj1)
-console.log("obj2",obj2)
+// let obj2 = {};
+// for(let key in obj1){
+//     obj2[key] = obj1[key];
+// }
+// // obj1.occ = "school";
+// console.log("obj1",obj1)
+// console.log("obj2",obj2)
+
+// Error Handling
+// try{
+//     console.log(X);
+// }
+// catch(err){
+//     throw new Error("X is not defined");
+//     console.log("your error:",err);
+
+// }
+// finally{
+//     console.log("Finally block executed");
+// }
