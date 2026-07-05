@@ -237,3 +237,39 @@
 // finally{
 //     console.log("Finally block executed");
 // }
+
+// Reflow and Repaint
+// let t1 = performance.now();
+// for(let i = 1 ;i <= 100 ; i++){
+//     let div = document.createElement('p');
+//     div.textContent = " Paragraph " + i;
+//     document.body.appendChild(div);
+// }
+// let t2 = performance.now();
+// console.log("Time taken:", t2 - t1);
+
+// Code 2
+// let t3 = performance.now();
+
+// let div = document.createElement('div');
+// for (let i = 1 ; i <=100 ; i++){
+//     let para = document.createElement('p');
+//     para.textContent = "paragraph " + i;
+//     div.appendChild(para);
+// }
+// document.body.appendChild(div);
+
+// let t4 = performance.now();
+// console.log("Time taken:", t4 - t3);
+
+// best code
+t5 = performance.now();
+let doc = document.createDocumentFragment();
+for(let i = 1 ; i <= 100 ; i++){
+    let para = document.createElement('p');
+    para.textContent = "paragraph" + i;
+    doc.appendChild(para);
+}
+document.body.appendChild(doc);
+t6 = performance.now();
+console.log("Time taken:", t6 - t5);
