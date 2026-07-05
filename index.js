@@ -263,13 +263,20 @@
 // console.log("Time taken:", t4 - t3);
 
 // best code
-t5 = performance.now();
-let doc = document.createDocumentFragment();
-for(let i = 1 ; i <= 100 ; i++){
-    let para = document.createElement('p');
-    para.textContent = "paragraph" + i;
-    doc.appendChild(para);
-}
-document.body.appendChild(doc);
-t6 = performance.now();
-console.log("Time taken:", t6 - t5);
+// t5 = performance.now();
+// let doc = document.createDocumentFragment();
+// for(let i = 1 ; i <= 100 ; i++){
+//     let para = document.createElement('p');
+//     para.textContent = "paragraph" + i;
+//     doc.appendChild(para);
+// }
+// document.body.appendChild(doc);
+// t6 = performance.now();
+// console.log("Time taken:", t6 - t5);
+
+// Event Loop
+console.log("1");
+setTimeout(() => {
+    console.log("2");
+},0);
+console.log("3");
