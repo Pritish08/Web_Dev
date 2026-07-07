@@ -275,8 +275,47 @@
 // console.log("Time taken:", t6 - t5);
 
 // Event Loop
-console.log("1");
-setTimeout(() => {
-    console.log("2");
-},0);
-console.log("3");
+// console.log("1");
+// setTimeout(() => {
+//     console.log("2");
+// },0);
+// console.log("3");
+
+// Promise
+// new Promise(
+//     (resolve , reject) => {
+        // console.log("Promise is pending");
+        // resolve(2);
+        // reject(new Error("Promise is rejected"));
+//         setTimeout(() => {
+//     console.log("2");
+// },10000);
+//     let val = false;
+//     if(val){
+//         resolve(2);
+//     }
+//     else{
+//         reject(new Error("Promise is rejected"));
+//     }
+// }).then((value) => {
+//     console.log("value:", value);
+//     return 2;
+// }).catch((error) => {
+//     console.log("error:", error);
+// })
+// Can also do promise chaining
+
+promise1 = new Promise((resolve , reject) => {
+    setTimeout(resolve , 1000 , "Promise 1");
+})
+promise2 = new Promise((resolve , reject) => {
+    setTimeout(resolve , 1000 , "Promise 2 ");
+})
+promise3 = new Promise((resolve , reject) => {
+    setTimeout(reject , 1000 , "Promise 3 ");
+})
+Promise.all([promise1 , promise2 , promise3]).then((value) => {
+    console.log(value);
+}).catch((error) => {
+    console.log("error:",error);
+})
