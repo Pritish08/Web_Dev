@@ -305,17 +305,31 @@
 // })
 // Can also do promise chaining
 
-promise1 = new Promise((resolve , reject) => {
-    setTimeout(resolve , 1000 , "Promise 1");
-})
-promise2 = new Promise((resolve , reject) => {
-    setTimeout(resolve , 1000 , "Promise 2 ");
-})
-promise3 = new Promise((resolve , reject) => {
-    setTimeout(reject , 1000 , "Promise 3 ");
-})
-Promise.all([promise1 , promise2 , promise3]).then((value) => {
-    console.log(value);
-}).catch((error) => {
-    console.log("error:",error);
-})
+// promise1 = new Promise((resolve , reject) => {
+//     setTimeout(resolve , 1000 , "Promise 1");
+// })
+// promise2 = new Promise((resolve , reject) => {
+//     setTimeout(resolve , 1000 , "Promise 2 ");
+// })
+// promise3 = new Promise((resolve , reject) => {
+//     setTimeout(reject , 1000 , "Promise 3 ");
+// })
+// Promise.all([promise1 , promise2 , promise3]).then((value) => {
+//     console.log(value);
+// }).catch((error) => {
+//     console.log("error:",error);
+// })
+
+// Async Await
+async function Data() {
+    await new Promise((resolve) => {
+        setTimeout(() => {
+            console.log("Data 1");
+            resolve();
+        }, 3000);
+    });
+
+    console.log("Done");
+}
+
+Data();
