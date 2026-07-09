@@ -321,15 +321,27 @@
 // })
 
 // Async Await
-async function Data() {
-    await new Promise((resolve) => {
-        setTimeout(() => {
-            console.log("Data 1");
-            resolve();
-        }, 3000);
-    });
+// async function Data() {
+//     await new Promise((resolve) => {
+//         setTimeout(() => {
+//             console.log("Data 1");
+//             resolve();
+//         }, 3000);
+//     });
 
-    console.log("Done");
+//     console.log("Done");
+// }
+// Data();
+
+
+// Closure
+function outer(){
+    let name = "John Doe";
+    function inner(){
+        console.log(name);
+    }
+    return inner;
 }
 
-Data();
+let innerfunction = outer();
+innerfunction();
